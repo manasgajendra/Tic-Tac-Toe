@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.break{
+    clear: both;
+}
+
+nav{
+    background-color: aquamarine;
+    height: 75px;
+    display: flex;
+    padding: 20px 50px 0px ;
+    font-family: 'Gentium Book Plus', serif;
+    font-size: larger;
+    justify-content: center;
+}
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+
+.box{
+    border: solid black 1px;
+    font-size: 8vw;
+    font-family: 'Montserrat', sans-serif;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(231, 206, 255);
+}
+
+.gameInfo{
+    padding: 50px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.info{
+    font-size:25px;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+#reset{
+    margin: 0 23px;
+    padding: 6px 14px;
+    background-color: violet;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
